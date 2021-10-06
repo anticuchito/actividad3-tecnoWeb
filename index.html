@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 3</title>
+  </head>
+  <body>
+    
+    <h1>Creacion de usuario</h1>
+    <form class="card">
+      <div class="mb-3">
+        <label for="firstName" class="form-label">nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          name="firstName"
+          placeholder="ingrese su nombre"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="lastName" class="form-label">apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          name="lastName"
+          placeholder="ingrese su apellido"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="rut" class="form-label">Rut</label>
+        <input
+          type="text"
+          class="form-control"
+          id="rut"
+          name="rut"
+          placeholder="ingrese su rut"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="ingrese su email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="age" class="form-label">Edad</label>
+        <input
+          type="number"
+          class="form-control"
+          id="age"
+          name="age"
+          placeholder="ingrese su edad"
+         
+        />
+      </div>
+      <div class="mb-3">
+        <label for="nationality" class="form-label">Nacionalidad</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nationality"
+          name="nationality"
+          placeholder="ingrese su nacionalidad"
+       
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="ingrese su contraseña"
+          required
+        />
+    
+      <button type="submit"  class="btn btn-primary" id="btnClick">Enviar</button>
+    </form>
+
+    <script>
+
+        function handlerClick(){
+            const firstName = document.getElementById('firstName')
+            const lastName = document.getElementById('lastName')
+            const rut  = document.getElementById('rut')
+            const email = document.getElementById('element')
+            const age = document.getElementById('age')
+            const nationality = document.getElementById('nationality')
+            console.log(firstName)
+        }
+        const btn = document.getElementById("btnClick");
+        btn.addEventListener('click', handlerClick)
+
+    </script>
+  </body>
+</html>
